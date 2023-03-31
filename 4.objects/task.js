@@ -13,8 +13,7 @@ Student.prototype.addMarks = function (...marks) {
   if (!this.marks) {
     return;
   }
-  this.marks = [...marks];
-  console.log(this.marks);
+  this.marks.push(...marks);
 };
 
 Student.prototype.getAverage = function () {
